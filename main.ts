@@ -1,5 +1,4 @@
 let Light_Level_LDR = 0
-music.play(music.stringPlayable("- - - - - - - - ", 120), music.PlaybackMode.UntilDone)
 basic.forever(function () {
     Light_Level_LDR = pins.analogReadPin(AnalogReadWritePin.P1)
     if (Light_Level_LDR >= 1020) {
