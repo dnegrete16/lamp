@@ -1,4 +1,5 @@
 let Light_Level_LDR = 0
+music.ringTone(262)
 basic.forever(function () {
     Light_Level_LDR = pins.analogReadPin(AnalogReadWritePin.P1)
     if (Light_Level_LDR >= 1020) {
